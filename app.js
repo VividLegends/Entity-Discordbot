@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const settings = require('./settings.json');
+const token = process.env.Token;
 require('./utility/eventLoader')(client);
 
 var reload = (message, cmd) => {
@@ -18,5 +19,5 @@ var reload = (message, cmd) => {
 };
 exports.reload = reload;
 
-client.login(settings.token);
+client.login(token);
 
