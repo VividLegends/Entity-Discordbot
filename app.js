@@ -19,3 +19,4 @@ var reload = (message, cmd) => {
 exports.reload = reload;
 
 client.login(settings.token);
+
